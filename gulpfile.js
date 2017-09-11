@@ -25,7 +25,7 @@ gulp.task("scss", () => {
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
         .pipe(scss())
-        .pipe(gulp.dest("./dist/css"))
+        .pipe(gulp.dest("./dist/views/css"))
 });
 
 //pugをhtmlに変換
@@ -35,7 +35,7 @@ gulp.task("pug", () => {
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
         .pipe(pug())
-        .pipe(gulp.dest("./dist/html"))
+        .pipe(gulp.dest("./dist/views"))
 });
 
 
@@ -43,14 +43,14 @@ gulp.task("pug", () => {
 gulp.task('browser-sync', () => {
     browserSync({
         server: {
-            baseDir: "./dist/html"   //ブラウザに表示するディレクトリ
+            baseDir: "./dist/views"   //ブラウザに表示するディレクトリ
         }
     });
     //ファイルの監視
     //以下のファイルが変わったらリロードする
-    gulp.watch(path.resolve("./dist/js/*.js"),     ['reload']);
-    gulp.watch(path.resolve("./dist/html/*.html"),     ['reload']);
-    gulp.watch(path.resolve("./dist/css/*.css"),     ['reload']);
+    gulp.watch(path.resolve("./dist/views/js/*.js"),       ['reload']);
+    gulp.watch(path.resolve("./dist/views/*.html"),        ['reload']);
+    gulp.watch(path.resolve("./dist/views/css/*.css"),     ['reload']);
 });
 
 //ブラウザリロード処理

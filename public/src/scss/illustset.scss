@@ -1,0 +1,88 @@
+#page_navi {
+  color: #A1A1A1;
+  font-size: 10px;
+  padding: 25px;
+}
+
+.illust-box {
+  margin: 0px 50px 30px 0px;
+  border-radius: 50% 50% 50% 50%;
+  background: #fff;
+  display: inline-block;
+}
+
+.illust_texts {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.illust_img {
+  display: block;
+  padding: 50px;
+  height: 280px;
+  width: 230px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.description {}
+
+.description_h3 {
+  color: #989B9D;
+  font-size: 17px;
+  padding: 20px 0px 20px 0px;
+}
+
+.description_p {
+  color: #9EA1A2;
+  font-size: 12px;
+  padding: 5px 0px 5px 0px;
+}
+
+.downloader {
+  padding-top: 30px;
+}
+
+.downloader_button {
+  border-radius: 30px;
+  padding: 8px 45px 8px 45px;
+  font-size: 13px;
+  background: #EA6D53;
+  text-decoration: none;
+  border: solid 0px;
+  color: #fff;
+}
+
+.downloader_p {
+  padding-top: 7px;
+  color: #9EA1A2;
+  font-size: 10px;
+}
+
+.back {
+  background: #fff;
+  padding: 40px 0px 80px 0px;
+}
+
+.back_buttons {
+  width: 415px;
+  margin: 0 auto;
+  letter-spacing: -.4em;
+  background: #fff;
+}
+
+.back_button {
+  letter-spacing: normal;
+  width: 200px;
+  margin-right: 15px;
+  border-radius: 30px;
+  padding: 7px 35px 7px 35px;
+  font-size: 13px;
+  background: #fff;
+  text-decoration: none;
+  border: solid 1px #EA6D53;
+  color: #EA6D53;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
