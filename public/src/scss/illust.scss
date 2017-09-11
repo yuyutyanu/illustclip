@@ -58,42 +58,28 @@
   background: #fff;
   padding: 40px 0px 80px 0px;
 }
-.illust-set{
-   & .illust{
-      width:148.75px;
-      margin-right:25px;
-      display: inline-block;
-      padding-bottom:50px;
-     &:last-child{
-       margin-right:0px;
-     }
-     & .illust_img{
-       height:100px;
-       text-align: center;
-       padding:0 0 10px 0;
-       & img{
-         height:100%;
-       }
-     }
-     & .illust_p{
-       font-size:10px;
-       color:#A5A7A9;
-       font-weight:600;
-     }
-   }
+
+.back_buttons {
+  width: 435px;
+  margin: 0 auto;
+  letter-spacing: -.4em;
+  background: #fff;
+  & .back_buttons_a{
+    margin-right:15px;
+  }
 }
 
 .back_button {
- text-align: center;
-  & button{
-    @include white-button();
-    letter-spacing: normal;
+  @include white-button();
+  letter-spacing: normal;
+  &:last-child {
+    margin-right: 0px;
   }
 }
 
 @media screen and (max-width: 710px) {
   #page_navi {
-   text-align: center;
+    text-align: center;
   }
   .illust-caption {
     display: block;
@@ -106,16 +92,5 @@
   }
   .downloader_p {
     padding-bottom:50px;
-  }
-  .illust-set{
-    & .illust{
-      width:101.25px;
-    }
-    & .illust_img{
-      height:50px;
-    }
-    & .illust_p{
-      font-size:6px;
-    }
   }
 }

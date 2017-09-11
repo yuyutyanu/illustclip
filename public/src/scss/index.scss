@@ -40,11 +40,9 @@
     margin-left:50%;
     left:-26px;
     top:-30px;
-
-
   }
   & .box_img{
-    height:150px;
+    height:130px;
     position: absolute;
     top:40%;
     left:50%;
@@ -68,5 +66,19 @@
     width:100%;
     text-align:center;
     color:#A9AAAB;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .boxes{
+    width:100%;
+  }
+  .box{
+    height:220px;
+    width:220px;
+    &:before {
+      height: 220px;
+      width: 220px;
+    }
   }
 }

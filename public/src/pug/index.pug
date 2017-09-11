@@ -1,31 +1,31 @@
-html
-    head
-        link(rel='stylesheet' href='/css/layout.css')
-        link(rel='stylesheet' href='/css/reset.css')
-        link(rel='stylesheet' href='/css/index.css')
-    body
-        .content-edge
-            include common/header.pug
-            .container
-                .boxes
-                    .box
-                        .box_img
-                            img(src='img/woman_nomal/woman_nomal03.png')
-                        h3.box_h3 一般女性のイラストセット
-                        p.box_p ２０〜３０代の私服のイラストセットです
-                    .box
-                        .box_img
-                            img(src='img/man_nomal/man_nomal04.png')
-                        h3.box_h3 一般女性のイラストセット
-                        p.box_p ２０〜３０代の私服のイラストセットです
-                    .box
-                        .box_img
-                            img(src='img/woman_nomal/woman_nomal03.png')
-                        h3.box_h3 一般女性のイラストセット
-                        p.box_p ２０〜３０代の私服のイラストセットです
-                    .box
-                        .box_img
-                            img(src='img/man_nomal/man_nomal04.png')
-                        h3.box_h3 一般女性のイラストセット
-                        p.box_p ２０〜３０代の私服のイラストセットです
-            include common/footer.pug
+extends common/layout.pug
+
+block css
+    link(rel='stylesheet' href='/css/index.css')
+block main
+    .container
+        .boxes
+            .box
+                a(href="illustset.html")
+                    .box_img
+                        img(src='img/woman_nomal/woman_nomal03.png')
+                    h3.box_h3 一般女性のイラストセット
+                    p.box_p ２０〜３０代の私服のイラストセットです
+            .box
+                a(href="illustset.html")
+                    .box_img
+                        img(src='img/man_nomal/man_nomal04.png')
+                    h3.box_h3 一般女性のイラストセット
+                    p.box_p ２０〜３０代の私服のイラストセットです
+            .box
+                a(href="illustset.html")
+                    .box_img
+                        img(src='img/woman_nomal/woman_nomal03.png')
+                    h3.box_h3 一般女性のイラストセット
+                    p.box_p ２０〜３０代の私服のイラストセットです
+            .box
+                a(href="illustset.html")
+                    .box_img
+                        img(src='img/man_nomal/man_nomal04.png')
+                    h3.box_h3 一般女性のイラストセット
+                    p.box_p ２０〜３０代の私服のイラストセットです

@@ -1,9 +1,11 @@
 html
     head
-        link(href='/css/layout.scss')
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        link(rel='stylesheet' href='/css/layout.css')
+        link(rel='stylesheet' href='/css/reset.css')
         block css
     body
         .content-edge
-            include common/header.pug
+            include header.pug
             block main
-            include common/footer.pug
+            include footer.pug

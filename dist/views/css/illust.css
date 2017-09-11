@@ -52,36 +52,26 @@
   background: #fff;
   padding: 40px 0px 80px 0px; }
 
-.illust-set .illust {
-  width: 148.75px;
-  margin-right: 25px;
-  display: inline-block;
-  padding-bottom: 50px; }
-  .illust-set .illust:last-child {
-    margin-right: 0px; }
-  .illust-set .illust .illust_img {
-    height: 100px;
-    text-align: center;
-    padding: 0 0 10px 0; }
-    .illust-set .illust .illust_img img {
-      height: 100%; }
-  .illust-set .illust .illust_p {
-    font-size: 10px;
-    color: #A5A7A9;
-    font-weight: 600; }
+.back_buttons {
+  width: 435px;
+  margin: 0 auto;
+  letter-spacing: -.4em;
+  background: #fff; }
+  .back_buttons .back_buttons_a {
+    margin-right: 15px; }
 
 .back_button {
-  text-align: center; }
-  .back_button button {
-    width: 210px;
-    border-radius: 30px;
-    padding: 8px 35px 8px 35px;
-    font-size: 13px;
-    background: #fff;
-    text-decoration: none;
-    border: solid 1px #EA6D53;
-    color: #EA6D53;
-    letter-spacing: normal; }
+  width: 210px;
+  border-radius: 30px;
+  padding: 8px 35px 8px 35px;
+  font-size: 13px;
+  background: #fff;
+  text-decoration: none;
+  border: solid 1px #EA6D53;
+  color: #EA6D53;
+  letter-spacing: normal; }
+  .back_button:last-child {
+    margin-right: 0px; }
 
 @media screen and (max-width: 710px) {
   #page_navi {
@@ -94,10 +84,4 @@
     width: 480px;
     text-align: center; }
   .downloader_p {
-    padding-bottom: 50px; }
-  .illust-set .illust {
-    width: 101.25px; }
-  .illust-set .illust_img {
-    height: 50px; }
-  .illust-set .illust_p {
-    font-size: 6px; } }
+    padding-bottom: 50px; } }
