@@ -2,6 +2,8 @@
   color: #A1A1A1;
   font-size: 10px;
   padding: 25px 0px 25px 0px; }
+  #page_navi .arrow {
+    margin: 0 10px 0 10px; }
 
 .illust-caption {
   margin: 0px 50px 30px 0px;
@@ -41,7 +43,8 @@
   background: #EA6D53;
   text-decoration: none;
   border: solid 0px;
-  color: #fff; }
+  color: #fff;
+  outline: none; }
 
 .downloader_p {
   padding-top: 7px;
@@ -55,8 +58,7 @@
 .back_buttons {
   width: 435px;
   margin: 0 auto;
-  letter-spacing: -.4em;
-  background: #fff; }
+  letter-spacing: -.4em; }
   .back_buttons .back_buttons_a {
     margin-right: 15px; }
 
@@ -69,7 +71,11 @@
   text-decoration: none;
   border: solid 1px #EA6D53;
   color: #EA6D53;
+  outline: none;
   letter-spacing: normal; }
+  @media screen and (max-width: 500px) {
+    .back_button {
+      width: 150px; } }
   .back_button:last-child {
     margin-right: 0px; }
 
@@ -85,3 +91,14 @@
     text-align: center; }
   .downloader_p {
     padding-bottom: 50px; } }
+
+@media screen and (max-width: 500px) {
+  .illust_texts {
+    width: 100%; }
+  .back {
+    padding: 40px 0px 40px 0px; }
+  .back_buttons {
+    width: 100%;
+    text-align: center; }
+    .back_buttons .back_button {
+      margin-bottom: 10px; } }

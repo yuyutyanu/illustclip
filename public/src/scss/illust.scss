@@ -4,6 +4,9 @@
   color: #A1A1A1;
   font-size: 10px;
   padding: 25px 0px 25px 0px;
+  & .arrow{
+    margin: 0 10px 0 10px;
+  }
 }
 
 .illust-caption {
@@ -63,7 +66,6 @@
   width: 435px;
   margin: 0 auto;
   letter-spacing: -.4em;
-  background: #fff;
   & .back_buttons_a{
     margin-right:15px;
   }
@@ -92,5 +94,20 @@
   }
   .downloader_p {
     padding-bottom:50px;
+  }
+}
+@media screen and(max-width: 500px){
+  .illust_texts {
+    width:100%;
+  }
+  .back {
+    padding: 40px 0px 40px 0px;
+  }
+  .back_buttons{
+    width:100%;
+    text-align: center;
+    .back_button{
+      margin-bottom:10px;
+    }
   }
 }

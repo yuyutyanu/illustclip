@@ -5,7 +5,10 @@ block css
 
 block main
     .container
-        p#page_navi topページ > 一般女性のイラスト > 悩む女性のイラスト
+        p#page_navi
+            span topページ
+            span.arrow >
+            span 一般女性のイラスト
         .illust-caption
             img.illust_img(src='/img/woman_nomal/woman_nomal03.png', alt='')
         .illust_texts
@@ -14,31 +17,33 @@ block main
                 p.description_p 20~30代の私服の女性のイラストです。
                 p.description_p ターゲットユーザが若い女性や主婦の場合のLP最適です。
             .downloader
-                button.downloader_button 全てをダウンロード
+                a(href="/img/woman_nomal/woman_nomal.zip" download='woman.zip')
+                    button#downloader_button 全てをダウンロード
                 p.downloader_p 画像をクリックすると個別にダウンロードすることができます。
     .back
         .container
             .illust-set
                 .illust
-                    .illust_img
-                        a(href='illust.html')
+                    a.illust_a(href='illust.html')
+                        .illust_img
                             img(src='/img/woman_nomal/woman_nomal02.png', alt='')
-                    p.illust_p 悩む女性のイラスト悩む女性のイラスト
+                            p.illust_p 悩む女性のイラスト悩む女性のイラスト
                 .illust
-                    .illust_img
-                        a(href='illust.html')
+                    a.illust_a(href='illust.html')
+                        .illust_img
                             img(src='/img/woman_nomal/woman_nomal02.png', alt='')
-                    p.illust_p 悩む女性のイラスト悩む女性のイラスト
+                            p.illust_p 悩む女性のイラスト悩む女性のイラスト
                 .illust
-                    .illust_img
-                        a(href='illust.html')
+                    a.illust_a(href='illust.html')
+                        .illust_img
                             img(src='/img/woman_nomal/woman_nomal02.png', alt='')
-                    p.illust_p 悩む女性のイラスト悩む女性のイラスト
+                            p.illust_p 悩む女性のイラスト悩む女性のイラスト
                 .illust
-                    .illust_img
-                        a(href='illust.html')
+                    a.illust_a(href='illust.html')
+                        .illust_img
                             img(src='/img/woman_nomal/woman_nomal02.png', alt='')
-                    p.illust_p 悩む女性のイラスト悩む女性のイラスト
+                            p.illust_p 悩む女性のイラスト悩む女性のイラスト
             .back_button
-                button トップに戻る
+                a(href='/')
+                    button TOPに戻る
 

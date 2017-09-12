@@ -4,6 +4,9 @@
   color: #A1A1A1;
   font-size: 10px;
   padding: 25px 0px 25px 0px;
+  & .arrow{
+    margin: 0 10px 0 10px;
+  }
 }
 
 .illust-caption {
@@ -44,7 +47,7 @@
   padding-top: 30px;
 }
 
-.downloader_button {
+#downloader_button {
   @include orange-button();
 }
 
@@ -60,25 +63,32 @@
 }
 .illust-set{
    & .illust{
+      height:130px;
       width:148.75px;
       margin-right:25px;
       display: inline-block;
       padding-bottom:50px;
-     &:last-child{
-       margin-right:0px;
-     }
-     & .illust_img{
-       height:100px;
-       text-align: center;
-       padding:0 0 10px 0;
-       & img{
-         height:100%;
+     & .illust_a{
+       text-decoration: none;
+       display: block;
+       height:100%;
+       & .illust_img{
+         height:100px;
+         text-align: center;
+         padding:0;
+         & img{
+           height:100%;
+         }
+       }
+       & .illust_p{
+         font-size:10px;
+         color:#A5A7A9;
+         font-weight:600;
+         padding-top:10px;
        }
      }
-     & .illust_p{
-       font-size:10px;
-       color:#A5A7A9;
-       font-weight:600;
+     &:last-child{
+       margin-right:0px;
      }
    }
 }
@@ -117,5 +127,17 @@
     & .illust_p{
       font-size:6px;
     }
+  }
+}
+
+@media screen and(max-width: 500px){
+  .illust-set{
+    & .illust{
+      width:50%;
+      margin:0;
+    }
+  }
+  .illust_texts {
+    width:100%;
   }
 }

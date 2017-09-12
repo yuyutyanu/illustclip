@@ -82,3 +82,23 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .boxes{
+    width:80%;
+  }
+  .box {
+    height: 200px;
+    width: 100%;
+    &:before {
+      height: 200px;
+      width: 100%;
+    }
+
+    & .box_img {
+      & img {
+        height: 80%;
+      }
+    }
+  }
+}

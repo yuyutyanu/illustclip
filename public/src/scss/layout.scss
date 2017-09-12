@@ -2,15 +2,9 @@
 @import "common/footer";
 @import "common/reset";
 
-
-html {
-  height: 100%;
-}
-
 body {
-  height: 100%;
   background: #F7F5F3;
-  width: 100%;
+  min-width:320px;
 }
 
 .content-edge {
@@ -26,5 +20,11 @@ body {
 @media screen and (max-width: 710px) {
   .container{
     width:480px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container{
+    width:100%;
+    margin:0 auto;
   }
 }

@@ -1,8 +1,8 @@
 
 footer {
-  height: 150px;
   background: #EA6D53;
   position: relative;
+  height:auto;
 }
 .footer_texture{
   background-image: url(/img/footer_texture.svg);
@@ -10,8 +10,25 @@ footer {
   top: -5px;
   height: 5px;
   width: 100%;
-  & img{
-    height:100%;
+  &:before{
+    content: "";
+    position: absolute;
+    margin-left: 50%;
+    background-image: url(/img/icon_circle.svg);
+    top: -27.5px;
+    height: 55px;
+    width: 55px;
+    transform: translate(-50%,0);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    margin-left: 50%;
+    background-image: url(/img/icon_arrowUp-white.svg);
+    top: -15px;
+    height: 15px;
+    width: 15px;
+    transform: translate(-50%,0);
   }
 }
 
@@ -69,5 +86,29 @@ footer {
   .footerlists_li{
     max-width:120px;
     min-width:120px;
+  }
+}
+@media screen and(max-width: 500px){
+  .footerlists_li{
+    max-width:50%;
+    min-width:50%;
+    margin:10px auto;
+  }
+  .chatbox{
+    padding-top:20px;
+    & .powered_by{
+      font-weight: 300;
+      display: block;
+    }
+    & .chatbox_img{
+      padding:2px 0 2px 0;
+    }
+    & .right_reserved{
+      font-weight: 100;
+      display: block;
+    }
+  }
+  footer{
+    height:260px;
   }
 }

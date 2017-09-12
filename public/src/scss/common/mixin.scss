@@ -7,6 +7,10 @@
   text-decoration: none;
   border: solid 1px #EA6D53;
   color: #EA6D53;
+  outline: none;
+  @media screen and(max-width: 500px){
+    width:150px;
+  }
 }
 @mixin orange-button(){
   width: 210px;
@@ -17,4 +21,5 @@
   text-decoration: none;
   border: solid 0px;
   color: #fff;
+  outline: none;
 }
