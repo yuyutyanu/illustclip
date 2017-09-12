@@ -6,11 +6,11 @@ block css
 block main
     .container
         p#page_navi
-        span topページ
-        span.arrow >
-        span 一般女性のイラスト
-        span.arrow >
-        span 悩む女性のイラスト
+            a(href='/').page_navi_a topページ
+            span.arrow >
+            a(href='illustset.html').page_navi_a 一般女性のイラスト
+            span.arrow >
+            a(href='illust.html').page_navi_a 悩む女性のイラスト
         .illust-caption
             img.illust_img(src='/img/woman_nomal/woman_nomal02.png', alt='')
         .illust_texts
