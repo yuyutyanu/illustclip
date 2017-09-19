@@ -211,7 +211,7 @@ button {
   .container {
     width: 560px; } }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
   .container {
     width: 100%;
     padding: 7px;

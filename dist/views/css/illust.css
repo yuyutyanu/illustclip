@@ -92,4 +92,14 @@
   .site-navi {
     text-align: center; }
   .center {
-    text-align: center; } }
+    text-align: center; }
+  .feature-text p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px; }
+  .feature-text h3 {
+    padding: 0px 0px 30px 0px; }
+  .downloader p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px; } }

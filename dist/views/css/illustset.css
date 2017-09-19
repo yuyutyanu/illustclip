@@ -101,7 +101,7 @@
     height: 250px;
     width: 250px;
     margin: 0 20px 40px; }
-  .feature-text h3 {
+  .feature .feature-text h3 {
     padding: 20px 0px 30px 0px;
     font-size: 20px; } }
 
@@ -110,5 +110,13 @@
     text-align: center; }
   .center {
     text-align: center; }
-  .thumbnail {
-    margin: 0; } }
+  .feature .feature-text p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px; }
+  .feature .feature-text h3 {
+    padding: 0px 0px 30px 0px; }
+  .downloader p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 20px; } }
