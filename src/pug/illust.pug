@@ -6,28 +6,27 @@ block css
 
 block main
     .container.center
-        p#page_navi
-            a(href='/').page_navi_a topページ
+        p.site-navi
+            a(href='/') topページ
             span.arrow >
-            a(href='illustset.html').page_navi_a 一般女性のイラスト
+            a(href='illustset.html') 一般女性のイラスト
             span.arrow >
-            a(href='illust.html').page_navi_a 悩む女性のイラスト
-        .illust-caption
-            img.illust_img(src='/img/woman_nomal/woman_nomal02.png', alt='')
-        .illust_texts
-            .description
-                h3.description_h3 悩む一般女性のイラスト
-                p.description_p 20~30代の私服の女性のイラストです。
-                p.description_p ターゲットユーザが若い女性や主婦の場合のLP最適です。
+            a(href='illust.html') 悩む女性のイラスト
+        .thumbnail
+            img(src='/img/woman_nomal/woman_nomal02.png', alt='')
+        .feature
+            .feature-text
+                h3 悩む一般女性のイラスト
+                p 20~30代の私服の女性のイラストです。
+                p ターゲットユーザが若い女性や主婦の場合のLP最適です。
             .downloader
                 a(href="/img/woman_nomal/woman_nomal02.png" download='woman.png')
-                    button.downloader_button 画像をダウンロード
-                p.downloader_p 画像をクリックすると個別にダウンロードすることができます。
+                    button 画像をダウンロード
+                p 画像をクリックすると個別にダウンロードすることができます。
     .back
         .container
-            .back_buttons
-                a.back_buttons_a(href='illustset.html')
-                    button.back_button 一覧に戻る
+            .back-to-top
+                a(href='illustset.html')
+                    button 一覧に戻る
                 a(href='/')
-                    button.back_button TOPに戻る
-
+                    button TOPに戻る

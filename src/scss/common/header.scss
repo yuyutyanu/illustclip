@@ -14,78 +14,80 @@ header {
     display: block;
     z-index: -1;
   }
-}
-
-.header_logo {
-  height: 80px;
-  margin: 0 auto;
-  padding: 15px 0px 5px 0px;
-  & img {
-    height: 100%;
+  & .site-description {
+    color: #828486;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    padding: 20px 0px 20px 0px;
   }
-}
-
-.headerlists {
-  width:100%;
-  padding: 14px 0px 14px 0px;
-  margin:0 auto;
-}
-
-.headerlists_li {
-  list-style: none;
-  background: #FFFBB8;
-  letter-spacing: normal;
-  padding: 8px 0px 8px 0px;
-  margin:0 auto;
-  & .headerlists_img {
-    height: 13px;
-    display: inline-block;
-    margin-right: 4px;
-    vertical-align: middle;
+  & .header-logo {
+    height: 80px;
+    margin: 0 auto;
+    padding: 15px 0px 5px 0px;
     & img {
       height: 100%;
     }
   }
-  & .headerlists_p {
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
 
-.headerlists_a {
-  display: inline-block;
-  margin-right: 6.666666667%;
-  min-width:20%;
-  &:last-child {
-    margin-right: 0px;
-  }
-  & a {
+.header-nav {
+  width: 100%;
+  padding: 14px 0px 14px 0px;
+  margin: 0 auto;
+
+  .nav-link {
+    display: inline-block;
+    margin-right: 6.666666667%;
+    min-width: 20%;
     color: #EA6D53;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
+    &:last-child {
+      margin-right: 0px;
+    }
+    & li {
+      list-style: none;
+      background: #FFFBB8;
+      letter-spacing: normal;
+      padding: 8px 0px 8px 0px;
+      margin: 0 auto;
+      & .nav-icon {
+        height: 13px;
+        display: inline-block;
+        margin-right: 4px;
+        vertical-align: middle;
+        & img {
+          height: 100%;
+        }
+      }
+      & p {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
   }
-}
-
-.header_p {
-  color: #828486;
-  font-size: 14px;
-  padding: 20px 0px 20px 0px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
 }
 
 @media screen and (max-width: 780px) {
-  .headerlists_a {
-    display: inline-block;
-    margin: 0px 10% 20px 0px;
-    min-width: 40%;
-    &:nth-child(2n) {
-      margin-right: 0px;
+  header {
+    .header-nav {
+      .nav-link {
+        display: inline-block;
+        margin: 0px 10% 20px 0px;
+        min-width: 40%;
+        &:nth-child(2n) {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    & .site-description {
+      width: 80%;
+      margin: 0 auto;
     }
   }
-  .header_p {
-    width: 80%;
-    margin: 0 auto;
-  }
 }
+
+

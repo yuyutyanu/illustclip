@@ -1,19 +1,19 @@
 @import "common/mixin";
 
-#page_navi {
+.site-navi {
   font-size: 14px;
   padding: 25px 0px 25px 0px;
-  & .arrow{
+  & .arrow {
     margin: 0 10px 0 10px;
     color: #A1A1A1;
   }
-  & .page_navi_a{
+  & a {
     text-decoration: none;
     color: #A1A1A1;
   }
 }
 
-.illust-caption {
+.thumbnail {
   margin: 0px 100px 30px 0px;
   border-radius: 50% 50% 50% 50%;
   background: #fff;
@@ -21,115 +21,119 @@
   height: 300px;
   width: 300px;
   text-align: center;
+  & img {
+    height: 70%;
+    padding-top: 30px;
+  }
 }
 
-.illust_texts {
+.feature {
   display: inline-block;
   vertical-align: top;
-}
 
-.illust_img {
-  height: 70%;
-  padding-top: 30px;
-}
+  & .feature-text {
 
-.description {}
+    & h3 {
+      color: #979A9C;
+      font-size: 22px;
+      padding: 50px 0px 30px 0px;
+    }
 
-.description_h3 {
-  color: #979A9C;
-  font-size: 22px;
-  padding: 50px 0px 30px 0px;
-}
-
-.description_p {
-  color: #9c9ea0;
-  font-size: 14px;
-  padding: 5px 0px 5px 0px;
+    & p {
+      color: #9c9ea0;
+      font-size: 14px;
+      padding: 5px 0px 5px 0px;
+    }
+  }
 }
 
 .downloader {
   padding-top: 30px;
-}
 
-#downloader_button {
-  @include orange-button();
-}
+  & button {
+    @include orange-button();
+  }
 
-.downloader_p {
-  padding-top: 10px;
-  color: #9EA1A2;
-  font-size: 14px;
+  & p{
+    padding-top: 10px;
+    color: #9EA1A2;
+    font-size: 14px;
+  }
 }
 
 .back {
   background: #fff;
   padding: 40px 0px 60px 0px;
 }
-.illust-set{
-   & .illust{
-     height: 130px;
-     width: 23%;
-     display: inline-block;
-     padding-bottom: 70px;
-     margin-right: 2.6666667%;
-     & .illust_a{
-       text-decoration: none;
-       display: block;
-       height:100%;
-       & .illust_img{
-         height:100px;
-         text-align: center;
-         padding:0;
-         & img{
-           height:100%;
-         }
-       }
-       & .illust_p{
-         font-size:14px;
-         color:#A5A7A9;
-         font-weight:600;
-         padding-top:10px;
-       }
-     }
-     &:last-child{
-       margin-right:0px;
-     }
-   }
+
+.illust-set {
+  & .illust-link {
+    height: 148px;
+    width: 23%;
+    display: inline-block;
+    padding-bottom: 70px;
+    margin-right: 2.6666667%;
+    & a {
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      & .illust {
+        height: 100px;
+        text-align: center;
+        padding: 0;
+        & img {
+          height: 100%;
+        }
+      }
+      & p {
+        font-size: 14px;
+        color: #A5A7A9;
+        font-weight: 600;
+        padding-top: 10px;
+      }
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 
-.back_button {
- text-align: center;
-  & button{
+.back-to-top {
+  text-align: center;
+  & button {
     @include white-button();
     letter-spacing: normal;
   }
 }
 
-@media screen and(max-width: 1080px){
-  .downloader_p{
-    padding:20px 0 30px 0;
+@media screen and(max-width: 1080px) {
+  .downloader {
+    & p {
+      padding: 20px 0 30px 0;
+    }
   }
 
-  .illust-caption {
+  .thumbnail {
     height: 250px;
     width: 250px;
-    margin:0 20px 40px;
+    margin: 0 20px 40px;
   }
-
-  .description_h3 {
-    padding: 20px 0px 30px 0px;
-    font-size:20px;
+  .feature-text{
+    & h3{
+      padding: 20px 0px 30px 0px;
+      font-size: 20px;
+    }
   }
 }
 
-@media screen and(max-width: 760px){
-  #page_navi{
+@media screen and(max-width: 760px) {
+  .site-navi {
     text-align: center;
   }
-  .center{
+  .center {
     text-align: center;
   }
-  .illust-caption{
-    margin:0;
+  .thumbnail {
+    margin: 0;
   }
 }

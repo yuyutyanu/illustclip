@@ -1,19 +1,19 @@
 @import "common/mixin";
 
-#page_navi {
+.site-navi {
   font-size: 14px;
   padding: 25px 0px 25px 0px;
-  & .arrow{
+  & .arrow {
     margin: 0 10px 0 10px;
     color: #A1A1A1;
   }
-  & .page_navi_a{
+  & a {
     text-decoration: none;
     color: #A1A1A1;
   }
 }
 
-.illust-caption {
+.thumbnail {
   margin: 0px 100px 30px 0px;
   border-radius: 50% 50% 50% 50%;
   background: #fff;
@@ -21,44 +21,39 @@
   height: 300px;
   width: 300px;
   text-align: center;
+  & img {
+    height: 70%;
+    padding-top: 30px;
+  }
 }
 
-.illust_texts {
+.feature {
   display: inline-block;
   vertical-align: top;
-}
-
-.illust_img {
-  height: 70%;
-  padding-top: 30px;
-}
-
-.description {}
-
-.description_h3 {
-  color: #979A9C;
-  font-size: 22px;
-  padding: 50px 0px 30px 0px;
-}
-
-.description_p {
-  color: #9c9ea0;
-  font-size: 14px;
-  padding: 5px 0px 5px 0px;
+  & .feature-text {
+    & h3 {
+      color: #979A9C;
+      font-size: 22px;
+      padding: 50px 0px 30px 0px;
+    }
+    & p {
+      color: #9c9ea0;
+      font-size: 14px;
+      padding: 5px 0px 5px 0px;
+    }
+  }
 }
 
 .downloader {
   padding-top: 30px;
-}
-
-.downloader_button {
-  @include orange-button();
-}
-
-.downloader_p {
-  padding-top: 10px;
-  color: #9EA1A2;
-  font-size: 14px;
+  & button {
+    @include orange-button();
+  }
+  & p {
+    padding-top: 10px;
+    color: #9EA1A2;
+    font-size: 14px;
+  }
 }
 
 .back {
@@ -66,45 +61,50 @@
   padding: 60px 0px 100px 0px;
 }
 
-.back_buttons {
+.back-to-top {
   width: 100%;
   margin: 0 auto;
   letter-spacing: -.4em;
   text-align: center;
-  & .back_buttons_a{
-    margin-right:40px;
+  & a {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  & button {
+    @include white-button();
+    letter-spacing: normal;
   }
 }
 
-.back_button {
-  @include white-button();
-  letter-spacing: normal;
-  &:last-child {
-    margin-right: 0px;
-  }
-}
+
 
 @media screen and (max-width: 1080px) {
-  .downloader_p{
-    padding:20px 0 30px 0;
+  .downloader {
+    & p {
+      padding: 20px 0 30px 0;
+    }
   }
 
-  .illust-caption {
+  .thumbnail {
     height: 250px;
     width: 250px;
-    margin:0 20px 40px;
+    margin: 0 20px 40px;
   }
-
-  .description_h3 {
-    padding: 20px 0px 30px 0px;
-    font-size:20px;
+  .feature-text{
+    & h3{
+      padding: 20px 0px 30px 0px;
+      font-size: 20px;
+    }
   }
 }
-@media screen and(max-width: 760px){
-  #page_navi{
+
+@media screen and(max-width: 760px) {
+  .site-navi {
     text-align: center;
   }
-  .center{
+  .center {
     text-align: center;
   }
 }

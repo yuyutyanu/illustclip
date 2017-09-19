@@ -1,5 +1,5 @@
 /*トップページ*/
-.boxes {
+.card-holder {
   padding: 60px 0px 50px 0px;
   width: 100%;
   margin: 0 auto;
@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.box {
+.card {
   text-decoration: none;
   height: 300px;
   width: 40%;
@@ -43,7 +43,7 @@
     left: -26px;
     top: -30px;
   }
-  & .box_img {
+  & .thumbnail {
     height: 180px;
     padding-top:20px;
     & img {
@@ -51,34 +51,43 @@
     }
   }
 
-  & .box_h3 {
+  & h3 {
     width: 100%;
     text-align: center;
     color: #9C9D9F;
     font-size:23px;
     padding: 15px 0 10px 0;
   }
-  & .box_p {
+  & p {
     font-size: 14px;
     width: 100%;
-    text-align: center;
     color: #A9AAAB;
   }
 }
 @media screen and (max-width: 1080px) {
-  .box{
-    & .box_h3 {
+  .card{
+    & h3 {
       font-size:20px;
     }
   }
 }
 @media screen and(max-width: 760px){
-  .box{
+  .card{
     width:70%;
-    margin: 0 0 40px 0;
-    & .box_h3 {
-      font-size:20px;
+    margin: 0 auto;
+    margin-bottom:40px;
+    display:block;
+    &:nth-child(2n) {
+      margin: 0 auto;
+      margin-bottom:40px;
+    }
+    & h3 {
+      font-size:18px;
       bottom: 55px;
+    }
+    & p {
+      width:90%;
+      margin:0 auto;
     }
   }
 }

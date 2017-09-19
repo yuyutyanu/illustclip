@@ -8,9 +8,15 @@
   border: solid 1px #EA6D53;
   color: #EA6D53;
   outline: none;
+  //transition: ease 0.4s;
   @media screen and(max-width: 500px){
     width:150px;
   }
+  //&:hover{
+  //  background:#EA6D53;
+  //  color:#fff;
+  //
+  //}
 }
 @mixin orange-button(){
   width: 210px;
@@ -22,4 +28,11 @@
   border: solid 0px;
   color: #fff;
   outline: none;
+  //transition: ease 0.4s;
+  //&:hover{
+  //  background:#fff;
+  //  color:#EA6D53;
+  //  border:solid 1px #EA6D53;
+  //
+  //}
 }
