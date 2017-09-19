@@ -85,3 +85,11 @@ footer {
     font-weight: 100;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .footerlists_li{
+    & p{
+      font-size:14px;
+    }
+  }
+}

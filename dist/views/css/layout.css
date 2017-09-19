@@ -186,6 +186,10 @@ footer {
   .chatbox .right_reserved {
     font-weight: 100; }
 
+@media screen and (max-width: 560px) {
+  .footerlists_li p {
+    font-size: 14px; } }
+
 body {
   background: #F7F5F3;
   min-width: 320px;

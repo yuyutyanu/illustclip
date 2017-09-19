@@ -8,15 +8,16 @@
   text-align: center; }
 
 .box {
+  text-decoration: none;
   height: 300px;
   width: 40%;
   background: #fff;
   border-bottom: solid 3px #EB856A;
   box-sizing: border-box;
-  position: relative;
   display: inline-block;
   margin: 0px 10% 50px 0px;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  position: relative; }
   .box:nth-child(2n) {
     margin-right: 0px; }
   .box:before {
@@ -32,8 +33,8 @@
     z-index: -1; }
   .box:after {
     content: "";
-    background-image: url("../img/icon_clip.svg");
     position: absolute;
+    background-image: url("../img/icon_clip.svg");
     height: 40px;
     width: 52px;
     margin-left: 50%;
@@ -41,22 +42,16 @@
     top: -30px; }
   .box .box_img {
     height: 180px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    padding-top: 20px; }
     .box .box_img img {
       height: 100%; }
   .box .box_h3 {
-    position: absolute;
-    bottom: 45px;
     width: 100%;
     text-align: center;
     color: #9C9D9F;
-    font-size: 23px; }
+    font-size: 23px;
+    padding: 15px 0 10px 0; }
   .box .box_p {
-    position: absolute;
-    bottom: 20px;
     font-size: 14px;
     width: 100%;
     text-align: center;
