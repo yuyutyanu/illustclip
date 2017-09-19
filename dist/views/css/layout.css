@@ -1,191 +1,4 @@
-header {
-  height: auto;
-  background: white;
-  text-align: center;
-  position: relative; }
-  header:after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background-image: linear-gradient(-45deg, #fff 25%, #FECEBF 25%, #FECEBF 50%, #fff 50%, #fff 75%, #FECEBF 75%, #FECEBF);
-    background-size: 10px 10px;
-    bottom: -5px;
-    display: block;
-    z-index: -1; }
-
-.header_logo {
-  height: 70px;
-  margin: 0 auto;
-  padding: 15px 0px 5px 0px; }
-  .header_logo img {
-    height: 100%; }
-
-.headerlists {
-  min-width: 670px;
-  max-width: 670px;
-  margin: 0 auto;
-  padding: 10px 0px 10px 0px; }
-
-.headerlists_li {
-  list-style: none;
-  background: #FFFBB8;
-  min-width: 148.75px;
-  letter-spacing: normal;
-  padding: 8px 0px 8px 0px;
-  margin: 0 auto; }
-  .headerlists_li .headerlists_img {
-    height: 13px;
-    display: inline-block;
-    margin-right: 4px;
-    vertical-align: middle; }
-    .headerlists_li .headerlists_img img {
-      height: 100%; }
-  .headerlists_li .headerlists_p {
-    display: inline-block;
-    vertical-align: middle; }
-
-.headerlists_a {
-  display: inline-block;
-  margin-right: 25px; }
-  .headerlists_a:last-child {
-    margin-right: 0px; }
-  .headerlists_a a {
-    color: #EA6D53;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: 600; }
-
-.header_p {
-  color: #828486;
-  font-size: 10px;
-  padding: 10px 0px 20px 0px;
-  letter-spacing: 0.5px; }
-
-@media screen and (max-width: 710px) {
-  .headerlists {
-    min-width: 480px;
-    max-width: 480px; }
-  .headerlists_li {
-    display: inline-block;
-    margin: 0px 20px 10px 0px;
-    width: 170px; }
-  .headerlists_a:nth-child(2n) {
-    margin-right: 0px; }
-  .header_p {
-    width: 300px;
-    margin: 0 auto;
-    line-height: 1.5; } }
-
-@media screen and (max-width: 500px) {
-  .headerlists {
-    min-width: 80%;
-    max-width: 80%; }
-  .headerlists_li {
-    display: block;
-    min-width: 100%;
-    max-width: 100%; }
-  .headerlists_a {
-    margin: 5px auto; }
-    .headerlists_a:nth-child(2n) {
-      margin: 5px auto; }
-  .header_p {
-    width: 80%; } }
-
-footer {
-  background: #EA6D53;
-  position: relative;
-  height: auto; }
-
-.footer_texture {
-  background-image: url(/img/footer_texture.svg);
-  position: absolute;
-  top: -5px;
-  height: 5px;
-  width: 100%; }
-  .footer_texture:before {
-    content: "";
-    position: absolute;
-    margin-left: 50%;
-    background-image: url(/img/icon_circle.svg);
-    top: -27.5px;
-    height: 55px;
-    width: 55px;
-    transform: translate(-50%, 0); }
-  .footer_texture:after {
-    content: "";
-    position: absolute;
-    margin-left: 50%;
-    background-image: url(/img/icon_arrowUp-white.svg);
-    top: -15px;
-    height: 15px;
-    width: 15px;
-    transform: translate(-50%, 0); }
-
-.footerlists {
-  padding-top: 30px;
-  margin: 0 auto;
-  letter-spacing: -.4em; }
-
-.footerlists_li {
-  text-align: center;
-  list-style: none;
-  display: inline-block;
-  letter-spacing: normal;
-  min-width: 167.5px;
-  max-width: 167.5px;
-  margin-bottom: 40px; }
-  .footerlists_li a {
-    text-decoration: none;
-    color: #fff; }
-  .footerlists_li .footerlists_li_img {
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 10px; }
-    .footerlists_li .footerlists_li_img img {
-      height: 100%; }
-
-.chatbox {
-  height: 15px;
-  text-align: center; }
-  .chatbox img {
-    height: 100%;
-    margin: 0px 5px 0px 5px;
-    vertical-align: middle; }
-  .chatbox span {
-    font-size: 10px;
-    letter-spacing: normal;
-    color: #fff; }
-  .chatbox .powered_by {
-    font-weight: 300; }
-  .chatbox .right_reserved {
-    font-weight: 100; }
-
-@media screen and (max-width: 710px) {
-  .footerlists_li {
-    max-width: 120px;
-    min-width: 120px; } }
-
-@media screen and (max-width: 500px) {
-  .footerlists_li {
-    max-width: 50%;
-    min-width: 50%;
-    margin: 10px auto; }
-  .chatbox {
-    padding-top: 20px; }
-    .chatbox .powered_by {
-      font-weight: 300;
-      display: block; }
-    .chatbox .chatbox_img {
-      padding: 2px 0 2px 0; }
-    .chatbox .right_reserved {
-      font-weight: 100;
-      display: block; }
-  footer {
-    height: 260px; } }
-
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -224,23 +37,178 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+header {
+  height: auto;
+  background: white;
+  text-align: center;
+  position: relative; }
+  header:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(-45deg, #fff 25%, #FECEBF 25%, #FECEBF 50%, #fff 50%, #fff 75%, #FECEBF 75%, #FECEBF);
+    background-size: 10px 10px;
+    bottom: -5px;
+    display: block;
+    z-index: -1; }
+
+.header_logo {
+  height: 80px;
+  margin: 0 auto;
+  padding: 15px 0px 5px 0px; }
+  .header_logo img {
+    height: 100%; }
+
+.headerlists {
+  width: 100%;
+  padding: 14px 0px 14px 0px;
+  margin: 0 auto; }
+
+.headerlists_li {
+  list-style: none;
+  background: #FFFBB8;
+  letter-spacing: normal;
+  padding: 8px 0px 8px 0px;
+  margin: 0 auto; }
+  .headerlists_li .headerlists_img {
+    height: 13px;
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle; }
+    .headerlists_li .headerlists_img img {
+      height: 100%; }
+  .headerlists_li .headerlists_p {
+    display: inline-block;
+    vertical-align: middle; }
+
+.headerlists_a {
+  display: inline-block;
+  margin-right: 6.666666667%;
+  min-width: 20%; }
+  .headerlists_a:last-child {
+    margin-right: 0px; }
+  .headerlists_a a {
+    color: #EA6D53;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600; }
+
+.header_p {
+  color: #828486;
+  font-size: 14px;
+  padding: 20px 0px 20px 0px;
+  letter-spacing: 0.5px;
+  line-height: 20px; }
+
+@media screen and (max-width: 780px) {
+  .headerlists_a {
+    display: inline-block;
+    margin: 0px 10% 20px 0px;
+    min-width: 40%; }
+    .headerlists_a:nth-child(2n) {
+      margin-right: 0px; }
+  .header_p {
+    width: 80%;
+    margin: 0 auto; } }
+
+footer {
+  background: #EA6D53;
+  position: relative;
+  height: auto; }
+
+.footer_texture {
+  background-image: url(/img/footer_texture.svg);
+  position: absolute;
+  top: -5px;
+  height: 5px;
+  width: 100%; }
+  .footer_texture:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    background-image: url(/img/icon_circle.svg);
+    top: -27.5px;
+    height: 55px;
+    width: 55px;
+    transform: translate(-50%, 0);
+    background-repeat: no-repeat; }
+  .footer_texture:after {
+    content: "";
+    position: absolute;
+    margin-left: 50%;
+    background-image: url(/img/icon_arrowUp-white.svg);
+    top: -15px;
+    height: 15px;
+    width: 15px;
+    transform: translate(-50%, 0); }
+
+.footerlists {
+  padding-top: 30px;
+  margin: 0 auto;
+  letter-spacing: -.4em;
+  min-width: 100%;
+  max-width: 100%; }
+
+.footerlists_li {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  letter-spacing: normal;
+  min-width: 25%;
+  max-width: 25%;
+  margin-bottom: 40px; }
+  .footerlists_li a {
+    text-decoration: none;
+    color: #fff; }
+  .footerlists_li .footerlists_li_img {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+    .footerlists_li .footerlists_li_img img {
+      height: 100%; }
+
+.chatbox {
+  height: 15px;
+  text-align: center; }
+  .chatbox img {
+    height: 100%;
+    margin: 0px 5px 0px 5px;
+    vertical-align: middle; }
+  .chatbox span {
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #fff; }
+  .chatbox .powered_by {
+    font-weight: 300; }
+  .chatbox .right_reserved {
+    font-weight: 100; }
+
 body {
   background: #F7F5F3;
-  min-width: 320px; }
+  min-width: 320px;
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important; }
 
 .content-edge {
   border: solid 10px #EA6D53; }
 
 .container {
-  width: 670px;
+  width: 980px;
   height: auto;
   margin: 0 auto; }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 1080px) {
   .container {
-    width: 480px; } }
+    width: 710px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
+  .container {
+    width: 560px; } }
+
+@media screen and (max-width: 560px) {
   .container {
     width: 100%;
-    margin: 0 auto; } }
+    padding: 7px;
+    box-sizing: border-box; } }

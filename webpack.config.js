@@ -3,8 +3,8 @@ const path = require("path")
 module.exports = {
     entry: {
         bundle: [
-            path.resolve('./public/src/js/index.js'),
-            path.resolve('./public/src/js/sample.js')
+            path.resolve('./src/js/index.js'),
+            path.resolve('./src/js/sample.js')
         ]
     },
     output: {

@@ -1,7 +1,7 @@
 @import "common/mixin";
 
 #page_navi {
-  font-size: 10px;
+  font-size: 14px;
   padding: 25px 0px 25px 0px;
   & .arrow{
     margin: 0 10px 0 10px;
@@ -14,12 +14,12 @@
 }
 
 .illust-caption {
-  margin: 0px 50px 30px 0px;
+  margin: 0px 100px 30px 0px;
   border-radius: 50% 50% 50% 50%;
   background: #fff;
   display: inline-block;
-  height: 230px;
-  width: 230px;
+  height: 300px;
+  width: 300px;
   text-align: center;
 }
 
@@ -37,13 +37,13 @@
 
 .description_h3 {
   color: #979A9C;
-  font-size: 17px;
-  padding: 20px 0px 20px 0px;
+  font-size: 22px;
+  padding: 50px 0px 30px 0px;
 }
 
 .description_p {
   color: #9c9ea0;
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px 0px 5px 0px;
 }
 
@@ -56,22 +56,22 @@
 }
 
 .downloader_p {
-  padding-top: 7px;
+  padding-top: 10px;
   color: #9EA1A2;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .back {
   background: #fff;
-  padding: 40px 0px 80px 0px;
+  padding: 40px 0px 60px 0px;
 }
 .illust-set{
    & .illust{
-      height:130px;
-      width:148.75px;
-      margin-right:25px;
-      display: inline-block;
-      padding-bottom:50px;
+     height: 130px;
+     width: 23%;
+     display: inline-block;
+     padding-bottom: 70px;
+     margin-right: 2.6666667%;
      & .illust_a{
        text-decoration: none;
        display: block;
@@ -85,7 +85,7 @@
          }
        }
        & .illust_p{
-         font-size:10px;
+         font-size:14px;
          color:#A5A7A9;
          font-weight:600;
          padding-top:10px;
@@ -105,43 +105,31 @@
   }
 }
 
-@media screen and (max-width: 710px) {
-  #page_navi {
-   text-align: center;
+@media screen and(max-width: 1080px){
+  .downloader_p{
+    padding:20px 0 30px 0;
   }
+
   .illust-caption {
-    display: block;
-    margin:0 auto;
+    height: 250px;
+    width: 250px;
+    margin:0 20px 40px;
   }
-  .illust_texts {
-    display:block;
-    width:480px;
-    text-align: center;
-  }
-  .downloader_p {
-    padding-bottom:50px;
-  }
-  .illust-set{
-    & .illust{
-      width:101.25px;
-    }
-    & .illust_img{
-      height:50px;
-    }
-    & .illust_p{
-      font-size:6px;
-    }
+
+  .description_h3 {
+    padding: 20px 0px 30px 0px;
+    font-size:20px;
   }
 }
 
-@media screen and(max-width: 500px){
-  .illust-set{
-    & .illust{
-      width:50%;
-      margin:0;
-    }
+@media screen and(max-width: 760px){
+  #page_navi{
+    text-align: center;
   }
-  .illust_texts {
-    width:100%;
+  .center{
+    text-align: center;
+  }
+  .illust-caption{
+    margin:0;
   }
 }

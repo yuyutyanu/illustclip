@@ -17,7 +17,7 @@ header {
 }
 
 .header_logo {
-  height: 70px;
+  height: 80px;
   margin: 0 auto;
   padding: 15px 0px 5px 0px;
   & img {
@@ -26,16 +26,14 @@ header {
 }
 
 .headerlists {
-  min-width: 670px;
-  max-width: 670px;
-  margin: 0 auto;
-  padding: 10px 0px 10px 0px;
+  width:100%;
+  padding: 14px 0px 14px 0px;
+  margin:0 auto;
 }
 
 .headerlists_li {
   list-style: none;
   background: #FFFBB8;
-  min-width: 148.75px;
   letter-spacing: normal;
   padding: 8px 0px 8px 0px;
   margin:0 auto;
@@ -56,65 +54,38 @@ header {
 
 .headerlists_a {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 6.666666667%;
+  min-width:20%;
   &:last-child {
     margin-right: 0px;
   }
   & a {
     color: #EA6D53;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
   }
 }
 
 .header_p {
   color: #828486;
-  font-size: 10px;
-  padding: 10px 0px 20px 0px;
+  font-size: 14px;
+  padding: 20px 0px 20px 0px;
   letter-spacing: 0.5px;
+  line-height: 20px;
 }
 
-@media screen and (max-width: 710px) {
-  .headerlists {
-    min-width: 480px;
-    max-width: 480px;
-  }
-
-  .headerlists_li {
+@media screen and (max-width: 780px) {
+  .headerlists_a {
     display: inline-block;
-    margin: 0px 20px 10px 0px;
-    width: 170px;
-  }
-  .headerlists_a{
-    &:nth-child(2n){
-      margin-right:0px;
-    }
-  }
-  .header_p {
-    width: 300px;
-    margin: 0 auto;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .headerlists {
-    min-width: 80%;
-    max-width: 80%;
-  }
-  .headerlists_li {
-    display: block;
-    min-width: 100%;
-    max-width: 100%;
-  }
-  .headerlists_a{
-    margin: 5px auto;
-    &:nth-child(2n){
-      margin:5px auto;
+    margin: 0px 10% 20px 0px;
+    min-width: 40%;
+    &:nth-child(2n) {
+      margin-right: 0px;
     }
   }
   .header_p {
     width: 80%;
+    margin: 0 auto;
   }
 }

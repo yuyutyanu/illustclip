@@ -1,10 +1,13 @@
 extends common/layout
 
+block title
+    meta(title="illustset")
+
 block css
     link(rel='stylesheet' href='/css/illustset.css')
 
 block main
-    .container
+    .container.center
         p#page_navi
             a.page_navi_a(href='/') topページ
             span.arrow >

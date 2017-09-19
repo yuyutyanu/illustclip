@@ -1,11 +1,11 @@
-@charset "UTF-8";
 /*トップページ*/
 .boxes {
   padding: 60px 0px 50px 0px;
   width: 100%;
   margin: 0 auto;
   letter-spacing: -.4em;
-  text-align: center; }
+  text-align: center;
+}
 
 .box {
   height: 300px;
@@ -16,10 +16,11 @@
   position: relative;
   display: inline-block;
   margin: 0px 10% 50px 0px;
-  letter-spacing: normal; }
-  .box:nth-child(2n) {
-    margin-right: 0px; }
-  .box:before {
+  letter-spacing: normal;
+  &:nth-child(2n) {
+    margin-right: 0px;
+  }
+  &:before {
     content: "";
     position: absolute;
     height: 300px;
@@ -29,47 +30,60 @@
     background-size: 8px 8px;
     right: -6px;
     top: 5px;
-    z-index: -1; }
-  .box:after {
+    z-index: -1;
+  }
+  &:after {
     content: "";
-    background-image: url("../img/icon_clip.svg");
+    background-image: url('../img/icon_clip.svg');
     position: absolute;
     height: 40px;
     width: 52px;
     margin-left: 50%;
     left: -26px;
-    top: -30px; }
-  .box .box_img {
+    top: -30px;
+  }
+  & .box_img {
     height: 180px;
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%); }
-    .box .box_img img {
-      height: 100%; }
-  .box .box_h3 {
+    transform: translate(-50%, -50%);
+    & img {
+      height: 100%;
+    }
+  }
+
+  & .box_h3 {
     position: absolute;
     bottom: 45px;
     width: 100%;
     text-align: center;
     color: #9C9D9F;
-    font-size: 23px; }
-  .box .box_p {
+    font-size:23px;
+  }
+  & .box_p {
     position: absolute;
     bottom: 20px;
     font-size: 14px;
     width: 100%;
     text-align: center;
-    color: #A9AAAB; }
-
+    color: #A9AAAB;
+  }
+}
 @media screen and (max-width: 1080px) {
-  .box .box_h3 {
-    font-size: 20px; } }
-
-@media screen and (max-width: 760px) {
-  .box {
-    width: 70%;
-    margin: 0 0 40px 0; }
-    .box .box_h3 {
-      font-size: 20px;
-      bottom: 55px; } }
+  .box{
+    & .box_h3 {
+      font-size:20px;
+    }
+  }
+}
+@media screen and(max-width: 760px){
+  .box{
+    width:70%;
+    margin: 0 0 40px 0;
+    & .box_h3 {
+      font-size:20px;
+      bottom: 55px;
+    }
+  }
+}

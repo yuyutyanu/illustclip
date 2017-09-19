@@ -13,12 +13,13 @@ footer {
   &:before{
     content: "";
     position: absolute;
-    margin-left: 50%;
+    left: 50%;
     background-image: url(/img/icon_circle.svg);
     top: -27.5px;
     height: 55px;
     width: 55px;
     transform: translate(-50%,0);
+    background-repeat: no-repeat;
   }
   &:after{
     content: "";
@@ -36,6 +37,8 @@ footer {
   padding-top: 30px;
   margin: 0 auto;
   letter-spacing: -.4em;
+  min-width:100%;
+  max-width:100%;
 }
 
 .footerlists_li {
@@ -43,8 +46,8 @@ footer {
   list-style: none;
   display: inline-block;
   letter-spacing: normal;
-  min-width: 167.5px;
-  max-width: 167.5px;
+  min-width: 25%;
+  max-width: 25%;
   margin-bottom:40px;
   a {
     text-decoration: none;
@@ -71,7 +74,7 @@ footer {
     vertical-align: middle;
   }
   & span{
-    font-size:10px;
+    font-size:14px;
     letter-spacing: normal;
     color:#fff;
   }
@@ -80,35 +83,5 @@ footer {
   }
   & .right_reserved{
     font-weight: 100;
-  }
-}
-@media screen and (max-width: 710px) {
-  .footerlists_li{
-    max-width:120px;
-    min-width:120px;
-  }
-}
-@media screen and(max-width: 500px){
-  .footerlists_li{
-    max-width:50%;
-    min-width:50%;
-    margin:10px auto;
-  }
-  .chatbox{
-    padding-top:20px;
-    & .powered_by{
-      font-weight: 300;
-      display: block;
-    }
-    & .chatbox_img{
-      padding:2px 0 2px 0;
-    }
-    & .right_reserved{
-      font-weight: 100;
-      display: block;
-    }
-  }
-  footer{
-    height:260px;
   }
 }
